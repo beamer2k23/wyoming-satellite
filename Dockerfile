@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends avahi-utils
 
-RUN .venv/bin/pip3 install 'pysilero-vad==1.0.0' 'webrtc-noise-gain==1.2.3'
+RUN pip3 install 'webrtc-noise-gain==1.2.3'
 
 WORKDIR /app
 
