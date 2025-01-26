@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends avahi-utils
 
-RUN pip3 install 'webrtc-noise-gain==1.2.3'
+#RUN pip3 install 'webrtc-noise-gain==1.2.3'
 
 WORKDIR /app
 
