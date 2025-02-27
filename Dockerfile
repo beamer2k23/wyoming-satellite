@@ -3,9 +3,9 @@ FROM python:3.11-slim-bookworm
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && \
-    apt-get install --yes --no-install-recommends avahi-utils 
-#    && apt-get install --yes --no-install-recommends curl
+RUN apt-get update
+RUN apt-get install --yes --no-install-recommends avahi-utils 
+RUN apt-get install --yes --no-install-recommends curl
 
 WORKDIR /app
 
