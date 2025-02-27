@@ -4,8 +4,8 @@ ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get install --yes --no-install-recommends avahi-utils && \
-    apt-get install --yes --no-install-recommends curl
+    apt-get install --yes --no-install-recommends avahi-utils 
+#    && apt-get install --yes --no-install-recommends curl
 
 WORKDIR /app
 
